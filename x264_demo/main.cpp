@@ -39,7 +39,7 @@ int main(int argc, char **argv)
     }
 
     /* Get default params for preset/tuning */
-    if (x264_param_default_preset(&param, "medium", NULL) < 0) {
+    if (x264_param_default_preset(&param, "medium", "zerolatency") < 0) {
         std::cerr << "x264_param_default_preset error:" << std::endl;
         return -1;
     }
